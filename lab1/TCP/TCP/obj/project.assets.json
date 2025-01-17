@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT\\K7\\PRN222\\Lab1\\TCP\\TCP\\ServerApp.csproj",
+      "projectUniqueName": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\lab1\\TCP\\TCP\\ServerApp.csproj",
       "projectName": "ServerApp",
-      "projectPath": "D:\\FPT\\K7\\PRN222\\Lab1\\TCP\\TCP\\ServerApp.csproj",
+      "projectPath": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\lab1\\TCP\\TCP\\ServerApp.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\FPT\\K7\\PRN222\\Lab1\\TCP\\TCP\\obj\\",
+      "outputPath": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\lab1\\TCP\\TCP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
