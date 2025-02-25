@@ -1,0 +1,37 @@
+﻿@model IEnumerable<NewsManagementSystem.Models.NewsArticle>
+
+@{
+    ViewData["Title"] = "Report Statistics";
+}
+
+<h1>Report Statistics</h1>
+<a asp-action="AdminManagement" asp-controller="Admin" class="btn btn-secondary">Back to Admin Management</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>News Title</th>
+            <th>Headline</th>
+            <th>Created Date</th>
+            <th>News Content</th>
+            <th>News Source</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NewsTitle</td>
+                <td>@item.Headline</td>
+                <td>@item.CreatedDate</td>
+                <td>@item.NewsContent</td>
+                <td>@item.NewsSource</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.NewsArticleId" target="_blank">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

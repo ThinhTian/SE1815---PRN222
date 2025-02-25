@@ -15,7 +15,7 @@
             tasks.Add(Task.Run(() =>
             {
                 int iterations = 0;
-                for (int ctr = 1; ctr <= 2_000_000; ctr++)
+                for (int ctr = 1; ctr <= 200; ctr++)
                 {
                     token.ThrowIfCancellationRequested();
                 }

@@ -1,0 +1,22 @@
+﻿@model DemoASPNETCoreMVC.Models.HomeModel;
+
+@{
+    ViewData["Title"] = "Home Page";
+    var greeting = "Hi";
+    var weekDay = DateTime.Now.DayOfWeek;
+}
+
+<div class="text-center">
+    <p><h2 style="color: rebeccapurple" >@Model.Message</h2></p>
+
+    <form action="/home/Create" method="post">
+        <label for="Name">Name</label>
+        <input type="text" name="Name" />
+        <label for="Rate">Rate</label>
+        <input type="text" name="Rate" />
+        <label for="Rating">Rating</label>
+        <input type="text" name="Rating" />
+        <input type="submit" name="submit" />
+    </form>
+
+</div>

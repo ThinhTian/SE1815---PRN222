@@ -1,0 +1,60 @@
+﻿@model IEnumerable<NewsManagementSystem.Models.NewsArticle>
+
+@{
+    ViewData["Title"] = "Lecture";
+}
+
+<h1>The News Article</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Headline)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsContent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsSource)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var lectures in Model) {
+        <tr>
+            <td>
+                    @Html.DisplayFor(modelItem => lectures.NewsTitle)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => lectures.Headline)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => lectures.CreatedDate)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => lectures.NewsContent)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => lectures.NewsSource)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => lectures.NewsStatus)
+            </td>
+            <td>
+                  <a asp-action="Details" asp-route-NewArticleId="@lectures.NewsArticleId">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

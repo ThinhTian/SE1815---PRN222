@@ -1,0 +1,56 @@
+﻿@model IEnumerable<NewsManagementSystem.Models.SystemAccount>
+
+@{
+    ViewData["Title"] = "AdminManagement";
+    var role = new Dictionary<int?, string> 
+    {
+         { 1, "Staff" },
+         { 2, "Lecturer" },
+    };
+}
+
+<h1>Admin Management</h1>
+
+<a asp-action="GenerateReport" asp-controller="Admin" class="btn btn-primary">Generate Report News Article</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountEmail)
+            </td>
+            <td>
+                @(role.ContainsKey(item.AccountRole) ? role[item.AccountRole] : "Unknown")
+            </td>
+            <td>
+                @(item.Status ? "Active" : "Deactive")
+            </td>
+            <td>
+                <a asp-action="Edit" asp-controller="Admin" asp-route-AccountId="@item.AccountId">Update</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

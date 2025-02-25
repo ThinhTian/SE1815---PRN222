@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Staff Dashboard";
+}
+
+<h2>Staff Dashboard</h2>
+
+<div class="list-group">
+    <a asp-controller="Category" asp-action="Category" class="list-group-item list-group-item-action">
+        Manage Categories
+    </a>
+
+    <a asp-controller="Article" asp-action="Index" class="list-group-item list-group-item-action">
+        Manage News Articles
+    </a>
+
+    <a asp-controller="Profile" asp-action="Edit" class="list-group-item list-group-item-action">
+        Manage Your Profile
+    </a>
+
+    <a asp-controller="NewsHistory" asp-action="Index" class="list-group-item list-group-item-action">
+        View Your News History
+    </a>
+
+</div>

@@ -1,0 +1,5 @@
+D:\FPT\K7\PRN222\Projects\SE1815---PRN222\IocPatternDemo\obj\Debug\net8.0\IocPatternDemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT\K7\PRN222\Projects\SE1815---PRN222\IocPatternDemo\obj\Debug\net8.0\IocPatternDemo.AssemblyInfoInputs.cache
+D:\FPT\K7\PRN222\Projects\SE1815---PRN222\IocPatternDemo\obj\Debug\net8.0\IocPatternDemo.AssemblyInfo.cs
+D:\FPT\K7\PRN222\Projects\SE1815---PRN222\IocPatternDemo\obj\Debug\net8.0\IocPatternDemo.csproj.CoreCompileInputs.cache
+D:\FPT\K7\PRN222\Projects\SE1815---PRN222\IocPatternDemo\obj\Debug\net8.0\IocPatternDemo.sourcelink.json

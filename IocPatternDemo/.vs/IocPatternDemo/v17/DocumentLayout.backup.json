@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\IocPatternDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F36DF-F442-43B1-B561-21F19578A480}|IocPatternDemo.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\iocpatterndemo\\model\\jsonmoviereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0F36DF-F442-43B1-B561-21F19578A480}|IocPatternDemo.csproj|solutionrelative:model\\jsonmoviereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F36DF-F442-43B1-B561-21F19578A480}|IocPatternDemo.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\iocpatterndemo\\model\\movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0F36DF-F442-43B1-B561-21F19578A480}|IocPatternDemo.csproj|solutionrelative:model\\movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F36DF-F442-43B1-B561-21F19578A480}|IocPatternDemo.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\iocpatterndemo\\model\\imoviesreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0F36DF-F442-43B1-B561-21F19578A480}|IocPatternDemo.csproj|solutionrelative:model\\imoviesreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F36DF-F442-43B1-B561-21F19578A480}|IocPatternDemo.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\iocpatterndemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0F36DF-F442-43B1-B561-21F19578A480}|IocPatternDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0F36DF-F442-43B1-B561-21F19578A480}|IocPatternDemo.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\iocpatterndemo\\model\\xmlmoviereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0F36DF-F442-43B1-B561-21F19578A480}|IocPatternDemo.csproj|solutionrelative:model\\xmlmoviereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "XMLMovieReader.cs",
+              "DocumentMoniker": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\IocPatternDemo\\Model\\XMLMovieReader.cs",
+              "RelativeDocumentMoniker": "Model\\XMLMovieReader.cs",
+              "ToolTip": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\IocPatternDemo\\Model\\XMLMovieReader.cs",
+              "RelativeToolTip": "Model\\XMLMovieReader.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvx0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T09:57:53.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JSONMovieReader.cs",
+              "DocumentMoniker": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\IocPatternDemo\\Model\\JSONMovieReader.cs",
+              "RelativeDocumentMoniker": "Model\\JSONMovieReader.cs",
+              "ToolTip": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\IocPatternDemo\\Model\\JSONMovieReader.cs",
+              "RelativeToolTip": "Model\\JSONMovieReader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T09:53:59.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Movies.cs",
+              "DocumentMoniker": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\IocPatternDemo\\Model\\Movies.cs",
+              "RelativeDocumentMoniker": "Model\\Movies.cs",
+              "ToolTip": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\IocPatternDemo\\Model\\Movies.cs",
+              "RelativeToolTip": "Model\\Movies.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T09:52:09.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IMoviesReader.cs",
+              "DocumentMoniker": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\IocPatternDemo\\Model\\IMoviesReader.cs",
+              "RelativeDocumentMoniker": "Model\\IMoviesReader.cs",
+              "ToolTip": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\IocPatternDemo\\Model\\IMoviesReader.cs",
+              "RelativeToolTip": "Model\\IMoviesReader.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAArwAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T09:51:20.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\IocPatternDemo\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\IocPatternDemo\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T09:45:30.896Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

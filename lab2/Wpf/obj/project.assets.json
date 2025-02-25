@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT\\K7\\PRN222\\Lab1\\Wpf\\Wpf.csproj",
+      "projectUniqueName": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\lab2\\Wpf\\Wpf.csproj",
       "projectName": "Wpf",
-      "projectPath": "D:\\FPT\\K7\\PRN222\\Lab1\\Wpf\\Wpf.csproj",
+      "projectPath": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\lab2\\Wpf\\Wpf.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\FPT\\K7\\PRN222\\Lab1\\Wpf\\obj\\",
+      "outputPath": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\lab2\\Wpf\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
