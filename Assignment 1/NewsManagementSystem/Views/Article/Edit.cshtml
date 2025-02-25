@@ -39,10 +39,11 @@
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="NewsStatus" class="control-label"></label>
-                <input asp-for="NewsStatus" class="form-control" />
-                <span asp-validation-for="NewsStatus" class="text-danger"></span>
+                <input type="checkbox" name="NewsStatus" value="true" class="form-check-input" @(Model.NewsStatus == true ? "checked" : "") />
+                <input type="hidden" name="NewsStatus" value="false" />
+                <label for="NewsStatus">Is Active</label>
             </div>
+
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

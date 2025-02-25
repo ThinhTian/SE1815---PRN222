@@ -53,14 +53,14 @@ namespace NewsManagementSystem.Controllers
                     {
                         HttpContext.Response.Cookies.Append("UserId", account.AccountId.ToString(), new CookieOptions
                         {
-                            Expires = DateTimeOffset.UtcNow.AddDays(7),
+                            Expires = DateTimeOffset.UtcNow.AddDays(1),
                             HttpOnly = true,
                             Secure = true
                         });
 
                         HttpContext.Response.Cookies.Append("UserRole", userRole, new CookieOptions
                         {
-                            Expires = DateTimeOffset.UtcNow.AddDays(7),
+                            Expires = DateTimeOffset.UtcNow.AddDays(3),
                             HttpOnly = true,
                             Secure = true
                         });

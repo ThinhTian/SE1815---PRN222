@@ -1,10 +1,19 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using NewsManagementSystem.Models;
 
 namespace NewsManagementSystem.Controllers
 {
     public class StaffController : Controller
     {
+        private readonly FunewsManagementContext _context;
+
+        public StaffController(FunewsManagementContext context)
+        {
+            _context = context;
+        }
+
         // GET: StaffController
         public IActionResult StaffDashboard()
         {
@@ -15,7 +24,7 @@ namespace NewsManagementSystem.Controllers
             {
                 if (userRole == "Staff")
                 {
-                    return View(); 
+                    return View();
                 }
             }
 
@@ -24,72 +33,34 @@ namespace NewsManagementSystem.Controllers
 
 
         // GET: StaffController/Details/5
-        public ActionResult Details(int id)
+        public ActionResult ViewHistory()
         {
-            return View();
-        }
+            var userIdCookie = HttpContext.Request.Cookies["UserId"];
 
-        // GET: StaffController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: StaffController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
+            if (!string.IsNullOrEmpty(userIdCookie))
             {
-                return RedirectToAction(nameof(Index));
+                if (short.TryParse(userIdCookie, out short userId))
+                {
+                    var userCreatedArticles = _context.NewsArticles
+                                                      .Where(n => n.CreatedById == userId)
+                                                      .Include(n => n.Category)
+                                                      .ToList();
+
+                    return View(userCreatedArticles);
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Invalid User ID format.");
+                    return View(new List<NewsArticle>());
+                }
             }
-            catch
+            else
             {
-                return View();
-            }
-        }
-
-        // GET: StaffController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: StaffController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
+                ModelState.AddModelError("", "User ID not found in cookies.");
+                return View(new List<NewsArticle>());
             }
         }
 
-        // GET: StaffController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
 
-        // POST: StaffController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

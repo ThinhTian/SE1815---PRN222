@@ -36,7 +36,7 @@ namespace NewsManagementSystem.Controllers
         }
 
         // GET: ArticleController/Create
-        public IActionResult Create()
+        public ActionResult Create()
         {
             ViewBag.CategoryId = new SelectList(_context.Categories, "CategoryId", "CategoryName");
 
@@ -51,8 +51,6 @@ namespace NewsManagementSystem.Controllers
         }
 
         // POST: ArticleController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
         public IActionResult Create(NewsArticle model)
         {
             if (ModelState.IsValid)
@@ -73,36 +71,89 @@ namespace NewsManagementSystem.Controllers
                         return View(model);
                     }
                 }
-                _context.NewsArticles.Add(model);
-                _context.SaveChanges();
 
+                var maxNewsArticleId = _context.NewsArticles
+                    .OrderByDescending(n => n.NewsArticleId)
+                    .FirstOrDefault()?.NewsArticleId;
+
+                string newNewsArticleId = "" + (maxNewsArticleId != null ?
+                    (int.Parse(maxNewsArticleId.Substring(2)) + 1).ToString() : "1");
+
+                model.NewsArticleId = newNewsArticleId;
+
+                model.CreatedDate = DateTime.Now;
+                model.ModifiedDate = DateTime.Now;
+
+                try
+                {
+                    _context.NewsArticles.Add(model);
+                    _context.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "An error occurred while saving the article: " + ex.Message);
+                    ViewBag.CategoryId = new SelectList(_context.Categories, "CategoryId", "CategoryName");
+                    return View(model);
+                }
                 return RedirectToAction("Index");
             }
-
             ViewBag.CategoryId = new SelectList(_context.Categories, "CategoryId", "CategoryName");
             return View(model);
         }
 
-
         // GET: ArticleController/Edit/5
-        public IActionResult Edit(int id)
+        public IActionResult Edit(string id)
         {
-            return View();
+            var newsArticle = _context.NewsArticles.Find(id);
+            var userId = HttpContext.Request.Cookies["UserId"];
+            ViewBag.CategoryId = new SelectList(_context.Categories, "CategoryId", "CategoryName");
+            if (newsArticle == null)
+            {
+                return NotFound(); 
+            }
+            return View(newsArticle);
         }
 
         // POST: ArticleController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, IFormCollection collection)
+        public IActionResult Edit(int id, NewsArticle newsArticle)
         {
-            try
+
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                var userIdCookie = HttpContext.Request.Cookies["UserId"];
+                if (!string.IsNullOrEmpty(userIdCookie))
+                {
+                    if (short.TryParse(userIdCookie, out short userId))
+                    {
+                        var existNews = _context.NewsArticles.FirstOrDefault(c => c.NewsArticleId == newsArticle.NewsArticleId);
+                        if (existNews != null)
+                        {
+                            existNews.UpdatedById = userId;
+                            existNews.ModifiedDate = DateTime.Now;
+                            existNews.NewsSource = newsArticle.NewsSource;
+                            existNews.NewsTitle = newsArticle.NewsTitle;
+                            existNews.NewsContent = newsArticle.NewsContent;
+                            existNews.NewsStatus = newsArticle.NewsStatus;
+                            existNews.CategoryId = newsArticle.CategoryId;
+                            existNews.Headline = newsArticle.Headline;
+
+                            _context.Update(existNews);
+                            _context.SaveChanges();
+
+                            return RedirectToAction("Index");
+                        }
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "User ID not found in cookies.");
+                }
             }
-            catch
-            {
-                return View();
-            }
+
+            return RedirectToAction("Index");
+
         }
 
         // GET: ArticleController/Delete/5

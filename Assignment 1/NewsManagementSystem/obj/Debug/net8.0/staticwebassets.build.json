@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J2Vk2GY+HNhCmUD3smo7xH45fwHzXZTu9972ieevFf0=",
+  "Hash": "ThiZogtegaB01XJKZq49gRkmZ8pVTG/YD1sRfCryDio=",
   "Source": "NewsManagementSystem",
   "BasePath": "_content/NewsManagementSystem",
   "Mode": "Default",
@@ -120,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\Assignment 1\\NewsManagementSystem\\wwwroot\\js\\Article.js",
+      "SourceId": "NewsManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\Assignment 1\\NewsManagementSystem\\wwwroot\\",
+      "BasePath": "_content/NewsManagementSystem",
+      "RelativePath": "js/Article#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y3v3o3lxqa",
+      "Integrity": "PlTufFSwjgU9QM53d0GAejlpLlOTDnfAVrtgmcsbDWo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Article.js"
     },
     {
       "Identity": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\Assignment 1\\NewsManagementSystem\\wwwroot\\js\\category.js",
@@ -1605,6 +1626,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "js/Article.js",
+      "AssetFile": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\Assignment 1\\NewsManagementSystem\\wwwroot\\js\\Article.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "586"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PlTufFSwjgU9QM53d0GAejlpLlOTDnfAVrtgmcsbDWo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 18:07:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PlTufFSwjgU9QM53d0GAejlpLlOTDnfAVrtgmcsbDWo="
+        }
+      ]
+    },
+    {
+      "Route": "js/Article.y3v3o3lxqa.js",
+      "AssetFile": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\Assignment 1\\NewsManagementSystem\\wwwroot\\js\\Article.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "586"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PlTufFSwjgU9QM53d0GAejlpLlOTDnfAVrtgmcsbDWo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 18:07:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y3v3o3lxqa"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Article.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PlTufFSwjgU9QM53d0GAejlpLlOTDnfAVrtgmcsbDWo="
         }
       ]
     },
