@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\demoaspnetcoremvc\\models\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|solutionrelative:models\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\demoaspnetcoremvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\demoaspnetcoremvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\demoaspnetcoremvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\demoaspnetcoremvc\\models\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|solutionrelative:models\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\demoaspnetcoremvc\\models\\producteditmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\demoaspnetcoremvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\demoaspnetcoremvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|d:\\fpt\\k7\\prn222\\projects\\se1815---prn222\\demoaspnetcoremvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{929703FE-D182-48D6-9C2C-58987D72B9FC}|DemoASPNETCoreMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ProductEditModel.cs",
               "DocumentMoniker": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\DemoASPNETCoreMVC\\Models\\ProductEditModel.cs",
               "RelativeDocumentMoniker": "Models\\ProductEditModel.cs",
@@ -54,12 +54,11 @@
               "RelativeToolTip": "Models\\ProductEditModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T07:51:28.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T07:51:28.31Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\DemoASPNETCoreMVC\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T07:50:40.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T07:50:40.9Z"
             },
             {
               "$type": "Document",
@@ -78,14 +76,14 @@
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\DemoASPNETCoreMVC\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAiwBkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T07:04:08.003Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "HomeModel.cs",
               "DocumentMoniker": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\DemoASPNETCoreMVC\\Models\\HomeModel.cs",
               "RelativeDocumentMoniker": "Models\\HomeModel.cs",
@@ -98,20 +96,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\DemoASPNETCoreMVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\DemoASPNETCoreMVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-12T06:50:27.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\DemoASPNETCoreMVC\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -124,13 +122,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\DemoASPNETCoreMVC\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\FPT\\K7\\PRN222\\Projects\\SE1815---PRN222\\DemoASPNETCoreMVC\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-12T06:50:05.832Z",
               "EditorCaption": ""

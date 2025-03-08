@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using NewsManagementSystem.Models;
+using System.Net.Mail;
+using System.Net;
 
 namespace NewsManagementSystem.Controllers
 {
@@ -42,8 +44,24 @@ namespace NewsManagementSystem.Controllers
 
             var userId = HttpContext.Request.Cookies["UserId"];
 
+            var maxNewsArticleId = _context.NewsArticles
+                                .OrderByDescending(n => n.NewsArticleId)
+                                .Select(n => n.NewsArticleId)
+                                .FirstOrDefault();
+
+            int numericId = 0; 
+            if (maxNewsArticleId != null)
+            {
+                numericId = int.Parse(maxNewsArticleId); 
+            }
+
+            string newNewsArticleId = (numericId + 1).ToString(); 
+
+
+
             var model = new NewsArticle
             {
+                NewsArticleId = newNewsArticleId,
                 CreatedDate = DateTime.Now
             };
 
@@ -51,6 +69,7 @@ namespace NewsManagementSystem.Controllers
         }
 
         // POST: ArticleController/Create
+        [HttpPost]
         public IActionResult Create(NewsArticle model)
         {
             if (ModelState.IsValid)
@@ -59,6 +78,10 @@ namespace NewsManagementSystem.Controllers
 
                 if (!string.IsNullOrEmpty(userId))
                 {
+                    var account = _context.SystemAccounts.FirstOrDefault(a => a.AccountId.ToString() == userId);
+                    if (account != null) {
+                        model.CreatedBy = account;
+                    }
                     if (short.TryParse(userId, out short parsedUserId))
                     {
                         model.CreatedById = parsedUserId;
@@ -72,29 +95,12 @@ namespace NewsManagementSystem.Controllers
                     }
                 }
 
-                var maxNewsArticleId = _context.NewsArticles
-                    .OrderByDescending(n => n.NewsArticleId)
-                    .FirstOrDefault()?.NewsArticleId;
-
-                string newNewsArticleId = "" + (maxNewsArticleId != null ?
-                    (int.Parse(maxNewsArticleId.Substring(2)) + 1).ToString() : "1");
-
-                model.NewsArticleId = newNewsArticleId;
-
                 model.CreatedDate = DateTime.Now;
                 model.ModifiedDate = DateTime.Now;
-
-                try
-                {
-                    _context.NewsArticles.Add(model);
-                    _context.SaveChanges();
-                }
-                catch (Exception ex)
-                {
-                    ModelState.AddModelError("", "An error occurred while saving the article: " + ex.Message);
-                    ViewBag.CategoryId = new SelectList(_context.Categories, "CategoryId", "CategoryName");
-                    return View(model);
-                }
+                
+                _context.NewsArticles.Add(model);
+                SendEmailNotification(model);
+                _context.SaveChanges();
                 return RedirectToAction("Index");
             }
             ViewBag.CategoryId = new SelectList(_context.Categories, "CategoryId", "CategoryName");
@@ -156,25 +162,40 @@ namespace NewsManagementSystem.Controllers
 
         }
 
-        // GET: ArticleController/Delete/5
-        public IActionResult Delete(int id)
+        private void SendEmailNotification(NewsArticle model)
         {
-            return View();
+            var smtpClient = new SmtpClient("smtp.gmail.com")
+            {
+                Port = 587,
+                Credentials = new NetworkCredential("tiannguyen316@gmail.com", "novx vnxr onni asig"),
+                EnableSsl = true
+            };
+
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress("tiannguyen316@gmail.com"),
+                Subject = "New Article Published",
+                Body = $"<h3>New Article Added</h3><p>Title: {model.NewsTitle}</p><p>Published on: {DateTime.Now}</p>",
+                IsBodyHtml = true
+            };
+
+            mailMessage.To.Add("he176158nguyenvanthinh@gmail.com");
+
+            smtpClient.Send(mailMessage);
         }
 
         // POST: ArticleController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Delete(int id, IFormCollection collection)
+        public IActionResult Delete(string id)
         {
-            try
+            var article = _context.NewsArticles.FirstOrDefault(n => n.NewsArticleId == id);
+            if (article != null)
             {
-                return RedirectToAction(nameof(Index));
+                _context.NewsArticles.Remove(article);
+                _context.SaveChanges();
             }
-            catch
-            {
-                return View();
-            }
+            return RedirectToAction("Index");
         }
     }
 }
